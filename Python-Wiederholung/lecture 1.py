@@ -141,12 +141,53 @@ print(x[0])  # Access to 1st element
 print(t[1])  # Access to 2nd element
 print(s[2])  # Access to 3rd element
 
-txt = input("Write something: ")
-print(list(txt))
-txt = list(txt)
+# Strings - A sequence of arbitrary characters enclosed in single or double quotation marks
+s = 'Mostly simple quotation marks are enough'
+t = "sometimes you'll need double quotation marks"
+
+print(s)
+print(t)
+
+# Lists
+# A sequence of arbitrary objects, e.g. integer numbers, float numbers, strings or (nested) lists.
+# Generated with square brackets
+# Elements are separated by commas; for readability it is recommended to put a space after the element (but not required)
+x = [3, 99,"whatever"]
+y = [42443, 5 , [5, [89, 'quite nested']], 55.7]
+
+print(x)
+print(y)
+
+# Tupel
+# Difference from lists: external: round brackets
+# Tuples can no longer be changed (immutable objects)
+x = (3, 99,"whatever")
+y = (42443, 5 , [5, [89, 'quite nested']], 55.7)
+print(x)
+print(y)
+
+# Indexing and Slicing
+s = "Monty Python"
+print(s[0])
+print(s[-1])
+print(s[2:4])
+
+# The slicing operator can also be used with three arguments.
+# The third is optional and specifies the step size s[begin, end, step]:
+print(s[1:5:2])
+print(s[1::3])
+
+
+
+
+
+
+# txt = input("Write something: ")
+# print(list(txt))
+# txt = list(txt)
 # txt.split()
-print(txt)
-additional = "+"
-for i in txt:
-    txt.insert(i, additional)
-print(txt)
+# print(txt)
+# additional = "+"
+# for i in txt:
+#     txt.insert(i, additional)
+# print(txt)
